@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <!--tailwind CDN link-->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body>
 
     <!--Responsive Navbar-->
@@ -14,11 +16,13 @@
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl font-bold">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 w-5 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+            class="size-5 w-5 md:hidden">
             <path fill-rule="evenodd"
                 d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
                 clip-rule="evenodd" />
         </svg>
+
 
 
 
@@ -29,35 +33,55 @@
         </ul>
     </nav>
 
+    <!--Side Navbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000"
+        style="width: 50%; height: 100vh; right:-50% ">
+
+        <div class="text-right pr-5 pt-5">
+            <p id="colsenav" class="inline cursor-pointer">X</p>
+
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+            <li><a class="hover:underline hover:text-black" href="product.html">Products</a></li>
+            <li><a class="hover:underline hover:text-black" href="contant.html">contant</a></li>
+        </ul>
+
+    </section>
+
     <!--Search bar-->
     <section class="text-center">
         <h1 class="text-3xl font-bold m-8">Our Products</h1>
-        <input type="text" class="border border-black w-3/4 h-10 p-3"placeholder="Searh for a Product..." >
+        <input id="search"type="text" class="border border-black w-3/4 h-10 p-3" placeholder="Searh for a Product...">
     </section>
 
     <!--Best Seller-->
     <section class="p-4 text-center">
-                <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+        <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
             <div>
-                <img src="./images/best seller image 01.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <img src="./images/best seller image 01.png"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <h1>Rose Plant</h1>
                 <p>$20</p>
             </div>
 
             <div>
-                <img src="./images/best seller image 02.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <img src="./images/best seller image 02.png"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <h1>Snake Plant</h1>
                 <p>$20</p>
             </div>
 
             <div>
-                <img src="./images/best seller image 03.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <img src="./images/best seller image 03.png"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <h1>Zamioculcas zamiifolia</h1>
                 <p>$20</p>
             </div>
 
             <div>
-                <img src="./images/best seller image 04.png" class="inline hover: shadow-xl transform hover:-translate-y-2">
+                <img src="./images/best seller image 04.png"
+                    class="inline hover: shadow-xl transform hover:-translate-y-2">
                 <h1>Blackpool Plant</h1>
                 <p>$20</p>
             </div>
@@ -65,44 +89,53 @@
 
     </section>
 
-        <!--Best Seller-->
-        <section class="p-4 text-center">
-            <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
-        <div>
-            <img src="./images/best seller image 05.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <h1>Epipremnum aureum
-                Plant</h1>
-            <p>$20</p>
+    <!--Best Seller-->
+    <section class="p-4 text-center">
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div>
+                <img src="./images/best seller image 05.png"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Epipremnum aureum
+                    Plant</h1>
+                <p>$20</p>
+            </div>
+
+            <div>
+                <img src="./images/best seller image 06.png"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Strelitzia nicolai Plant</h1>
+                <p>$20</p>
+            </div>
+
+            <div>
+                <img src="./images/best seller image 07.png"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Swiss cheese Plant</h1>
+                <p>$20</p>
+            </div>
+
+            <div>
+                <img src="./images/best seller image 08.png"
+                    class="inline hover: shadow-xl transform hover:-translate-y-2">
+                <h1>Fiddle-leaf fig Plant</h1>
+                <p>$20</p>
+            </div>
         </div>
 
-        <div>
-            <img src="./images/best seller image 06.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <h1>Strelitzia nicolai Plant</h1>
-            <p>$20</p>
-        </div>
+    </section>
 
-        <div>
-            <img src="./images/best seller image 07.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <h1>Swiss cheese Plant</h1>
-            <p>$20</p>
-        </div>
+    <!--Footer Section-->
+    <section class="bg-green-100 p-10 flex flex-col gap-5">
+        <h1 class="text-4xl font-bold">Greenden</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat asperiores rem, explicabo molestiae fuga
+            iure, quia et a laudantium quaerat veritatis dolorum in, quidem vitae nobis! Quasi deserunt nostrum ducimus.
+        </p>
+        <p>@2021greengay.com</p>
 
-        <div>
-            <img src="./images/best seller image 08.png" class="inline hover: shadow-xl transform hover:-translate-y-2">
-            <h1>Fiddle-leaf fig Plant</h1>
-            <p>$20</p>
-        </div>
-    </div>
+    </section>
 
-</section>
+    <script src="product.js"></script>
 
-<!--Footer Section-->
-<section class="bg-green-100 p-10 flex flex-col gap-5">
-    <h1 class="text-4xl font-bold">Greenden</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat asperiores rem, explicabo molestiae fuga iure, quia et a laudantium quaerat veritatis dolorum in, quidem vitae nobis! Quasi deserunt nostrum ducimus.</p>
-    <p>@2021greengay.com</p>
-
-</section>
-    
 </body>
+
 </html>
